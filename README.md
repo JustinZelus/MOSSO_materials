@@ -2,9 +2,9 @@
 
 > FRONTEND
 >
-> > React + Redux + Bootstrap 4 + SASS
+> > React + Redux(Ongoing) + Bootstrap 4 + SASS
 > >
-> > > react v16 + rounter v4 + react-redux v6
+> > > react v16 + rounter v4 + react-redux v6(Ongoing)
 
 > BACKEND
 >
