@@ -1,5 +1,9 @@
 ## [MÓSSO](http://www.mossomusic.ml/)
 
+
+&nbsp;
+<img src="https://github.com/JustinZelus/MOSSO_materials/edit/master/architecture.png" width="250" />
+
 > FRONTEND
 >
 > > React + Redux(Ongoing) + Bootstrap 4 + SASS
