@@ -2,7 +2,7 @@
 
 
 &nbsp;
-<img src="https://github.com/JustinZelus/MOSSO_materials/edit/master/architecture.png" width="250" />
+<img src="https://github.com/JustinZelus/MOSSO_materials/blob/master/architecture.png"/>
 
 > FRONTEND
 >
