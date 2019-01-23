@@ -26,9 +26,9 @@
 >
 > > SSR
 
-> DEBUG TOOLS
+> TOOLS
 >
-> > chrome , redux-devtools-extension
+> > chrome , redux-devtools-extension ,webpack-dev-server
 ---
 ---
 
