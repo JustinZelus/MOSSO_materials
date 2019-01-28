@@ -16,7 +16,7 @@
 
 > SERVER
 >
-> > AWS: EC2-Linux + S3 + IAM + EBS + Route 53
+> > AWS: EC2-Linux , S3  , EBS , Route 53
 
 > BUILD TOOLS
 >
