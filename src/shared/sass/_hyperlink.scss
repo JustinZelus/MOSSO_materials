@@ -1,0 +1,239 @@
+//
+// Hyperlink Styles //
+//
+.hyperlink-1,
+.hyperlink-2,
+.hyperlink-3,
+.hyperlink-4,
+.hyperlink-5,
+.hyperlink-6,
+.hyperlink-7,
+.hyperlink-8,
+.hyperlink-9,
+.hyperlink-10,
+.hyperlink-11 {
+  color: $color-black-06 !important;
+  &:hover,
+  &:focus {
+    color: $color-black-09 !important;
+  }
+}
+
+.hyperlink-1 {
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.hyperlink-2 {
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+
+.hyperlink-3 {
+  &:hover {
+    text-decoration: overline;
+  }
+}
+
+.hyperlink-4 {
+  &:hover {
+    text-decoration: underline overline;
+  }
+}
+
+.hyperlink-5,
+.hyperlink-6 {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: $color-black-09;
+    width: 0;
+    height: 1px;
+    @include transition(linear 0.1s);
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.hyperlink-5 {
+  &:before {
+    left: 0;
+  }
+}
+
+.hyperlink-6 {
+  &:before {
+    right: 0;
+  }
+}
+
+.hyperlink-7 {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include transform(translateY(3px));
+    opacity: 0;
+    background: $color-black-09;
+    width: 100%;
+    height: 1px;
+    @include transition(linear 0.1s);
+  }
+  &:hover {
+    &:before {
+      @include transform(translateY(0));
+      opacity: 1;
+    }
+  }
+}
+
+.hyperlink-8,
+.hyperlink-9 {
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    @include transition(linear 0.1s);
+  }
+  &:before {
+    left: 0;
+    background: $color-black-02;
+    width: 100%;
+  }
+  &:after {
+    background: $color-black-09;
+    width: 0;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.hyperlink-8 {
+  &:after {
+    left: 0;
+  }
+}
+
+.hyperlink-9 {
+  &:after {
+    right: 0;
+  }
+}
+
+.hyperlink-10 {
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    @include transition(linear 0.1s);
+  }
+  &:before {
+    background: $color-black-02;
+  }
+  &:after {
+    opacity: 0;
+    @include transform(translateY(3px));
+    background: $color-black-09;
+  }
+  &:hover {
+    &:before {
+      opacity: 0;
+    }
+    &:after {
+      @include transform(translateY(0));
+      opacity: 1;
+    }
+  }
+}
+
+.hyperlink-11 {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    background: $color-black-01;
+    width: 0;
+    height: 6px;
+    @include transition(linear 0.1s);
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.bg-dark,
+.bg-dark-lighter,
+.bg-dark-lightest,
+.bg-black-01,
+.bg-black-02,
+.bg-black-03,
+.bg-black-04,
+.bg-black-05,
+.bg-black-06,
+.bg-black-07,
+.bg-black-08,
+.bg-black-09 {
+  .hyperlink-1,
+  .hyperlink-2,
+  .hyperlink-3,
+  .hyperlink-4,
+  .hyperlink-5,
+  .hyperlink-6,
+  .hyperlink-7,
+  .hyperlink-8,
+  .hyperlink-9,
+  .hyperlink-10,
+  .hyperlink-11 {
+    color: $color-white;
+    &:hover,
+    &:focus {
+      color: $color-white;
+    }
+  }
+  .hyperlink-5,
+  .hyperlink-6,
+  .hyperlink-7 {
+    &:before {
+      background: $color-white;
+    }
+  }
+  .hyperlink-8,
+  .hyperlink-9,
+  .hyperlink-10 {
+    &:before {
+      background: $color-white-03;
+    }
+    &:after {
+      background: $color-white;
+    }
+  }
+  .hyperlink-11 {
+    &:before {
+      background: $color-white-03;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+ul {
+    &.list-horizontal-unstyled {
+        li {
+            a {
+                :hover,
+                :active {
+                    color: #c91515 !important;
+                }
+                i {
+                    &.icon {
+                        &.style3 {
+                            color: #141414;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// textarea {
+//     height: 140px;
+// }
+// // input,
+// textarea,
+// .form-control {
+//     color: #646464;
+// }
+// // input,
+// textarea {
+//     background: transparent;
+//     width: 100%;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     margin-bottom: 10px;
+//     padding: 15px 20px;
+//     box-shadow: none; // font: 300 16px "Heebo", sans-serif;
+//     // -webkit-transition: ease-out 0.2s;
+//     transition: ease-out 0.2s;
+// }
+.postBtn {
+    text-align: center;
+}
+
+// .pCenter {
+//     position: absolute;
+//     top: 50%;
+// }

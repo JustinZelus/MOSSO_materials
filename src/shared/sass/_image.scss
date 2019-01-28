@@ -1,0 +1,40 @@
+//
+// Image Styles //
+//
+img.myImage {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  &.img-circle-xs,
+  &.img-circle-sm,
+  &.img-circle-md,
+  &.img-circle-lg,
+  &.img-circle-xl {
+    border-radius: 50%;
+  }
+  &.img-circle-xs {
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+  }
+  &.img-circle-sm {
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+  }
+  &.img-circle-md {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+  }
+  &.img-circle-lg {
+    min-width: 120px;
+    width: 120px;
+    height: 120px;
+  }
+  &.img-circle-xl {
+    min-width: 120px;
+    width: 140px;
+    height: 140px;
+  }
+}

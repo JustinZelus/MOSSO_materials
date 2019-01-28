@@ -1,0 +1,98 @@
+//
+// Accordion Styles //
+//
+.accordion {
+    padding: 0;
+    li {
+        list-style-type: none;
+        border: 1px solid $border-grey;
+        border-bottom: 0;
+        margin: 0;
+        padding: 10px 20px;
+        &:last-child {
+            border-bottom: 1px solid $border-grey;
+        }
+        .accordion-title {
+            position: relative;
+            cursor: pointer;
+            padding: 5px 0;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                @include transform(translateY(-50%));
+                background: $color-dark;
+            }
+            &:before {
+                right: 0;
+                width: 7px;
+                height: 1px;
+            }
+            &:after {
+                right: 3px;
+                width: 1px;
+                height: 7px;
+                @include transition(linear 0.1s);
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin: 0;
+            }
+        }
+        .accordion-content {
+            position: relative;
+            overflow: hidden;
+            max-height: 0;
+            @include transition(ease-out 0.2s);
+        }
+        &.active {
+            .accordion-title {
+                &:after {
+                    @include transform(translateY(-50%) rotate(-90deg));
+                }
+            }
+        }
+    } //
+    // Accordion - Style 2 //
+    //
+    &.style-2 {
+        li {
+            border: 1px solid $border-grey;
+            border-radius: 5px;
+            margin-bottom: 6px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.bg-dark,
+.bg-dark-lighter,
+.bg-dark-lightest,
+.bg-black-01,
+.bg-black-02,
+.bg-black-03,
+.bg-black-04,
+.bg-black-05,
+.bg-black-06,
+.bg-black-07,
+.bg-black-08,
+.bg-black-09 {
+    .accordion {
+        li {
+            border-color: $color-white-02;
+            .accordion-title {
+                &:before,
+                &:after {
+                    background: $color-white;
+                }
+            }
+        }
+    }
+}

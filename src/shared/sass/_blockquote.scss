@@ -1,0 +1,101 @@
+//
+// Blockquote Styles //
+//
+.blockquote {
+  border: none;
+  background: $bg-grey-lighter;
+  margin-bottom: 20px;
+  padding: 25px 30px;
+  p {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    &.font-small {
+      font-size: 14px;
+      line-height: 26px;
+    }
+    &.font-large {
+      font-size: 20px;
+      line-height: 36px;
+    }
+  }
+  .blockquote-footer {
+    margin-top: 10px;
+    color: $color-dark;
+    &:before {
+      padding-right: 5px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-style: normal;
+      display: inline-block;
+      margin: 0;
+      font-weight: 550;
+    }
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+  &.blockquote-style-2 {
+    background: transparent;
+    border-left: 4px solid $color-black-01;
+    padding: 5px 0 5px 30px;
+  }
+  &.blockquote-style-3 {
+    background: $bg-grey;
+    border-left: 4px solid $color-black-01;
+  }
+  &.blockquote-style-4 {
+    position: relative;
+    background: transparent;
+    padding: 20px 0 0 34px;
+    &:before {
+      content: "\f10d";
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $color-black-01;
+      font-family: "Font Awesome 5 Free";
+      font-size: 24px;
+    }
+  }
+}
+
+.bg-dark,
+.bg-dark-lighter,
+.bg-dark-lightest,
+.bg-black-01,
+.bg-black-02,
+.bg-black-03,
+.bg-black-04,
+.bg-black-05,
+.bg-black-06,
+.bg-black-07,
+.bg-black-08,
+.bg-black-09 {
+  .blockquote {
+    background: $color-white-01;
+    .blockquote-footer {
+      color: $color-white;
+    }
+    &.blockquote-style-2 {
+      background: transparent;
+      border-color: $color-white-02;
+    }
+    &.blockquote-style-3 {
+      background: $color-white-01;
+      border-color: $color-white-02;
+    }
+    &.blockquote-style-4 {
+      background: transparent;
+      &:before {
+        color: $color-white-02;
+      }
+    }
+  }
+}
