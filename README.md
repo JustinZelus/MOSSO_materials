@@ -20,7 +20,7 @@
 
 > BUILD TOOLS
 >
-> > Webpack 4 + Babel
+> > Webpack 4
 
 > ISOMORPHIC
 >
